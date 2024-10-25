@@ -23,7 +23,7 @@ ACCESS_TOKEN = os.getenv('access_token')
 
 # Defines a variable that will hold the roomId
 roomIdToGetMessages = (
-    "<!!!REPLACEME with roomID of the IPA2024 Webex Teams room!!!>"
+    "Y2lzY29zcGFyazovL3VzL1JPT00vNTFmNTJiMjAtNWQwYi0xMWVmLWE5YTAtNzlkNTQ0ZjRkNGZi"
 )
 
 while True:
@@ -36,7 +36,7 @@ while True:
     getParameters = {"roomId": roomIdToGetMessages, "max": 1}
 
     # the Webex Teams HTTP header, including the Authoriztion
-    getHTTPHeader = {"Authorization": <!!!REPLACEME!!!>}
+    getHTTPHeader = {"Authorization": ACCESS_TOKEN}
 
 # 4. Provide the URL to the Webex Teams messages API, and extract location from the received message.
     
