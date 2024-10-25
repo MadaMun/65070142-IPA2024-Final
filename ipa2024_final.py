@@ -10,6 +10,7 @@ import json
 import requests
 import time
 import os
+from restconf_final import create
 # from restconf_final import create, delete, enable, disable, status
 from dotenv import load_dotenv
 load_dotenv()
@@ -80,22 +81,22 @@ while True:
 
 # # 5. Complete the logic for each command
 
-#         if command == "create":
-#             <!!!REPLACEME with code for create command!!!>     
-#         elif command == "delete":
-#             <!!!REPLACEME with code for delete command!!!>
-#         elif command == "enable":
-#             <!!!REPLACEME with code for enable command!!!>
-#         elif command == "disable":
-#             <!!!REPLACEME with code for disable command!!!>
-#         elif command == "status":
-#             <!!!REPLACEME with code for status command!!!>
-#          elif command == "gigabit_status":
-#             <!!!REPLACEME with code for gigabit_status command!!!>
-#         elif command == "showrun":
-#             <!!!REPLACEME with code for showrun command!!!>
-#         else:
-#             responseMessage = "Error: No command or unknown command"
+        if command == "create":
+            responseMessage = create()     
+        elif command == "delete":
+            responseMessage = delete()
+        elif command == "enable":
+            responseMessage = enable()
+        elif command == "disable":
+            responseMessage = disable()
+        elif command == "status":
+            responseMessage = status()
+        elif command == "gigabit_status":
+            responseMessage = gigabit_status()
+        elif command == "showrun":
+            responseMessage = showrun()
+        else:
+            responseMessage = "Error: No command or unknown command"
         
 # # 6. Complete the code to post the message to the Webex Teams room.
 
