@@ -1,12 +1,17 @@
 #######################################################################################
-# Yourname:
-# Your student ID:
-# Your GitHub Repo: 
+# Yourname: Pongsakorn Nopparattayaporn
+# Your student ID: 65070142
+# Your GitHub Repo: https://github.com/MadaMun/65070142-IPA2024-Final.git
 
 #######################################################################################
 # 1. Import libraries for API requests, JSON formatting, time, os, (restconf_final or netconf_final), netmiko_final, and ansible_final.
 
-<!!!REPLACEME with code for libraries>
+import json
+import requests
+import time
+import os
+from restconf_final import create, delete, enable, disable, status
+
 
 #######################################################################################
 # 2. Assign the Webex access token to the variable ACCESS_TOKEN using environment variables.
